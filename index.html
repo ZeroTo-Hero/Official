@@ -12,11 +12,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4377415232469839');
+fbq('init', '998029609849245');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4377415232469839&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=998029609849245&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
     <!-- Inline Critical CSS -->
@@ -313,7 +313,7 @@ src="https://www.facebook.com/tr?id=4377415232469839&ev=PageView&noscript=1"
                     <div class="logo">
                         <img id="logo-image" src="logo.jpg" alt="Educational Channel Logo" loading="lazy">
                     </div>
-                    <a id="telegram-link" onclick="trackSubscribe()" class="cta" href="#">Join Free Telegram</a>
+                    <a id="telegram-link" onclick="customEvent()" class="cta" href="#">Join Free Telegram</a>
                     <div class="feature-card">
                         <p class="green"><span class="emoji">✅</span> Discover Elite Financial Education & Trading Basics</p>
                     </div>
@@ -340,12 +340,10 @@ src="https://www.facebook.com/tr?id=4377415232469839&ev=PageView&noscript=1"
         });
     </script>
 
-<script>
-  function trackSubscribe() {
-    if (typeof fbq !== "undefined") {
-      fbq('track', 'Subscribe');
-    }
-  }
-</script>
+     <script>
+        function customEvent() {
+            fbq('track', 'Subscribe');
+        }
+    </script>
 
 </body></html>
